@@ -16,9 +16,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ============================================================
- * 
+ *
  * jQuery (Very) Lightweight Portfolio Filter for Bootstrap
- * 
+ *
  * Author: Geedmo (http://geedmo.com)
  * Version: 1.0
  * Usage:
@@ -31,14 +31,14 @@
 !function ($) {
 
   "use strict"; // jshint ;_;
-	
+
   var pluginName = 'portfilter';
 
  /* PUBLIC CLASS DEFINITION
   * ============================== */
 
   var PortFilter = function (element) {
-    
+
     this.$element = $(element)
     this.stuff 	  = $('[data-tag]');
     this.target   = this.$element.data('target') || '';
@@ -51,11 +51,11 @@
     this.stuff
         .fadeOut('fast').promise().done(function(){
             $(this).each(function(){
-                if($(this).data('tag') == target || target == 'all') 
+                if($(this).data('tag') == target || target == 'all')
                     items.push(this);
             });
             $(items).show()
-        });  
+        });
   }
 
 
@@ -68,17 +68,17 @@
     return this.each(function () {
       var $this = $(this)
         , data = $this.data(pluginName);
-      
+
       if(!data) $this.data(pluginName, (data = new PortFilter(this)))
-      
+
       if (option == 'filter') data.filter()
     })
   }
-  
+
   // DEFAULTS
   $.fn[pluginName].defaults = {}
-  
-  // CONSTRUCTOR CONVENTION 
+
+  // CONSTRUCTOR CONVENTION
   $.fn[pluginName].Constructor = PortFilter;
 
 
