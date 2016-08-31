@@ -20,6 +20,11 @@ ol, ul {
 .caption span {
     font-size: 20px;
 }
+
+.modal-body{
+    text-align: left;
+}
+
 iframe {
     display: block;
     margin: auto;
