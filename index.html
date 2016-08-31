@@ -293,7 +293,7 @@
             <h2>Team</h2>
             <hr>
             <div class="pull-right">
-                <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="organisers">
+                <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="organisers" id="def">
                     Head-Organiser
                 </button>
                 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="members">
@@ -470,6 +470,8 @@
 
     <script>
         $(function() {
+            
+            $("#def").click();
 
             $("#typed").typed({
                 // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
