@@ -21,6 +21,11 @@ ol, ul {
     font-size: 20px;
 }
 
+.sponsors{
+    font-family: 'Dancing Script', cursive;
+    font-size: 17px;
+}
+
 .modal-body{
     text-align: left;
 }
@@ -158,7 +163,7 @@ header img {
 header .intro-text .name {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 150;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 header .intro-text .typed {
     font-size: 1.25em;
